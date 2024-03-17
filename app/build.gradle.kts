@@ -53,6 +53,8 @@ android {
 
 dependencies {
 
+    implementation("androidx.paging:paging-common-android:3.3.0-alpha04")
+    implementation("androidx.paging:paging-compose:3.2.1")
     val nav_version = "2.7.5"
     val compose_version = "1.6.0-alpha08"
     val room = "2.6.0"
@@ -67,7 +69,7 @@ dependencies {
 
     //Retrofit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-
+   implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     //Kotlinx Serialization
     implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
     implementation ("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
@@ -97,6 +99,10 @@ dependencies {
 
     //Splash Api
     implementation ("androidx.core:core-splashscreen:1.0.1")
+    //Paging 3
+    val paging_version = "3.1.1"
+    implementation ("androidx.paging:paging-runtime:$paging_version")
+    implementation ("androidx.paging:paging-compose:3.2.0-rc01")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")

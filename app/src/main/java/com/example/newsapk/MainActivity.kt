@@ -2,7 +2,6 @@ package com.example.newsapk
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
@@ -19,18 +18,11 @@ import androidx.compose.ui.graphics.Color
 
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
-import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.lifecycleScope
-import com.example.newsapk.domain.usecases.AppEntryUseCases
 import com.example.newsapk.presentation.navgraph.NavGraph
-import com.example.newsapk.presentation.onboarding.OnBoardingScreen
-import com.example.newsapk.presentation.onboarding.OnBoardingViewModel
 import com.example.newsapk.ui.theme.NewsApkTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
-import javax.inject.Inject
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
    val viewModel by viewModels<MainViewModel>()

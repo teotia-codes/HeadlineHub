@@ -1,10 +1,9 @@
 package com.example.newsapk
 
-import androidx.compose.runtime.State
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
-import com.example.newsapk.domain.usecases.AppEntryUseCases
+import com.example.newsapk.domain.usecases.app_entry.AppEntryUseCases
 import com.example.newsapk.presentation.navgraph.Route
 import javax.inject.Inject
 import androidx.compose.runtime.setValue
